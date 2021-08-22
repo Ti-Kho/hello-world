@@ -1,0 +1,17 @@
+import 'dart:math';
+void main() {
+  bool isPrime(int number){
+    if (number % 2 == 0 || number == 1) {
+      return false;
+    } else {
+      int boundary = (sqrt(number)).round() as int;
+    for (int v = 3; v <= boundary; v+=2){
+        if (number % v == 0) {
+            return false;
+        }   
+    }
+      return true;
+  }
+  }
+  isPrime(55);
+}
